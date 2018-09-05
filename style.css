@@ -1,3 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 
+.landing {
+  display: flex;
+}
+@media screen and (max-width: 739px) {
+  .landing {
+    flex-direction: column;
+  }
+}
+.landing a {
+  font-size: 4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  display: block;
+  height: 100vh;
+  width: 50%;
+  background-color: #000;
+}
+@media screen and (max-width: 739px) {
+  .landing a {
+    width: 100%;
+  }
+}
+.landing a:first-child {
+  background: url(./miguel.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.landing a:first-child:hover {
+  text-shadow: 3px 3px #E94C3C, 5px 5px #111;
+}
+.landing a:last-child {
+  background: url(./kimmie.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.landing a:last-child:hover {
+  text-shadow: 3px 3px #FFA804, 5px 5px #00166C;
+}
+.landing a > div {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.2s;
+}
+.landing a > div div {
+  padding: 25px;
+  position: absolute;
+  bottom: 0;
+  max-width: 200px;
+}
+.landing a > div:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
 
 /*# sourceMappingURL=style.css.map */
